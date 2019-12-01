@@ -18,7 +18,7 @@ class Skill extends Component {
     let colorWidthTwo = {
       backgroundColor: this.props.skillData.color,
       width: `${99 - this.props.skillData.score}%`,
-      border: "5px solid white",
+      border: "5px solid #f5f5f5",
       opacity: this.props.isScrolled && this.state.isVisable ? 1 : 0,
       transition: "0.7s ease-out",
       padding: "0 0 0 10px",

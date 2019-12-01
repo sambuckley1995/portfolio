@@ -2,11 +2,17 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  background-color: black;
+  margin-block-end: 0;
   .wrapper {
     padding: 1%;
   }
   .icons {
     font-size: 80px;
-    color: black;
+    color: white;
+  }
+  .icons:hover {
+    cursor: pointer;
+    color: rgb(170, 170, 170);
   }
 }
