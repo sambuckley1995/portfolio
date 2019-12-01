@@ -1,0 +1,12 @@
+.links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    padding: 1%;
+  }
+  .icons {
+    font-size: 80px;
+    color: black;
+  }
+}

@@ -1,0 +1,27 @@
+.skillContainer {
+  height: 18%;
+  background: transparent;
+  margin-bottom: 20px;
+  display: flex;
+}
+.inner {
+  min-height: 18%;
+  width: 0%;
+  color: white;
+  // background: transparent;
+  mix-blend-mode: multiply;
+  letter-spacing: 12px;
+  font-weight: 600;
+  transition: width 2s ease-out;
+  border: 5px solid white;
+
+  p {
+    padding: 20px 0 0 20px;
+    margin: auto 0;
+    font-size: 2em;
+  }
+}
+.inner:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
