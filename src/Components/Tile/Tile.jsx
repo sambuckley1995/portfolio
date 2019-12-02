@@ -12,9 +12,8 @@ class Tile extends Component {
       this.props.tileData.link !== null ? this.props.tileData.link : "";
     return (
       <article className={styles.tileContainer}>
-        <div className={styles.inner}>
-          <p>{this.props.tileData.name}</p>
-        </div>
+        {/* img */}
+        <p>{this.props.tileData.name}</p>
         <div>
           <p>{this.props.tileData.desc}</p>
         </div>
