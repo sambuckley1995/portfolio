@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styles from "./App.module.scss";
 import Footer from "../Components/Footer";
-import Skills from "../Container/Skills/Skills";
+import Skills from "../Container/Skills";
+import Tiles from "../Container/Tiles";
 
 class App extends Component {
   state = {
@@ -72,7 +73,7 @@ class App extends Component {
         c.beginPath();
         c.strokeStyle = this.color.replace("x", +this.alpha);
         c.arc(this.x, this.y, this.r, Math.PI * 2, false);
-        c.lineWidth = 3;
+        c.lineWidth = 2;
         c.stroke();
         c.fillStyle = "transparent";
         c.fill();
@@ -117,8 +118,11 @@ class App extends Component {
       circles.push(new Circle(x, y, 0, 0, 10, 20));
     });
 
-    function animate() {
-      requestAnimationFrame(animate);
+    const animate = () => {
+      // setTimeout(() => {
+      //   window.requestAnimationFrame(animate);
+      // }, 50);
+      window.requestAnimationFrame(animate);
       c.clearRect(0, 0, window.innerWidth, window.innerHeight);
       x = window.innerWidth * getRandom();
       y = window.innerHeight * getRandom();
@@ -135,7 +139,7 @@ class App extends Component {
           circles.splice(i, 1);
         }
       }
-    }
+    };
     animate();
 
     window.addEventListener("scroll", this.handleScroll);
@@ -144,13 +148,17 @@ class App extends Component {
   render() {
     return (
       <>
-        <canvas
-          className={styles.canvas}
-          width={window.innerWidth}
-          height={window.innerHeight}
-        ></canvas>
-        <Skills isScrolled={this.state.isScrolled} />
-        <Footer />
+        <section className={styles.landing}>
+          <h1>Sam Buckley</h1>
+          <canvas
+            className={styles.canvas}
+            width={window.innerWidth}
+            height={window.innerHeight}
+          ></canvas>
+          <Skills isScrolled={this.state.isScrolled} />
+          <Tiles />
+          <Footer />
+        </section>
       </>
     );
   }

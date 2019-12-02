@@ -5,14 +5,16 @@ const skillData = [
     color: "hotpink",
     score: 48,
     desc:
-      "oh, thankyou Facebook, thank you for the creation of this wonderfull UI library, how could I ever return to HTML, CSS and javascript"
+      "I started learning React in Week 6 of the course, using it to create a web-app for our client project. I have learned about presentational and container components as well as states and props. I particularly enjoyed learning about React and the application of Javascript logic within an application."
+    // "oh, thankyou Facebook, thank you for the creation of this wonderfull UI library, how could I ever return to HTML, CSS and javascript"
   },
   {
     id: "javascript",
     name: "Javascript",
     color: "orange",
     score: 42,
-    desc: "lorem lorem lorem"
+    desc:
+      "I have used Javascript across multiple projects, especially in the challenges that we have been given on the _nology course. I have also consolidated my knowledge further through several personal interest projects."
   },
   {
     id: "css",
@@ -20,7 +22,7 @@ const skillData = [
     color: "blue",
     score: 54,
     desc:
-      "The art of making something look appealing, I'm the absolute king of it. "
+      "As styling is a core element of any application, I learnt to use CSS from the first week of the _nology course. I have learnt about selectors including classes, ids and pseudo-classes. The introduction of SCSS has been a revelation, never could I have known how useful the ability to nest would've been."
   },
   {
     id: "github",
@@ -28,7 +30,7 @@ const skillData = [
     color: "purple",
     score: 48,
     desc:
-      "After a shaky start when being introduced to git and github flow, an accidentally deleted commit. I have now developed and appreciation for git version control and a confidence in working with it."
+      "After a shaky start when being introduced to git and github flow and an accidentally deleted commit I have now developed an appreciation for git version control and a confidence in working with it."
   },
   {
     id: "firebase",
@@ -36,7 +38,7 @@ const skillData = [
     color: "green",
     score: 54,
     desc:
-      "I have primarily used Firebase for gmail authentication, CRUD and Firestore storage. I have also had limited exposure to facebook authentication and Firebase functions."
+      "I first started to use Firebase after the introduction of React, since then I have used Firestore, Authentication through gmail and Firebase Storage heavily. I have also had limited exposure to Facebook authentication and Firebase functions."
   }
 ];
 
