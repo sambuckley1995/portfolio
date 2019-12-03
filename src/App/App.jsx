@@ -155,6 +155,7 @@ class App extends Component {
             I'm Sam. <br /> Feel free to have a little look around my portfolio
             site.
           </h1>
+          <p>Click anywhere</p>
           <a href="#littleBlanket">
             {" "}
             <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />

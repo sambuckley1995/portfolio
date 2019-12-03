@@ -18,12 +18,8 @@ class Skill extends Component {
     let colorWidthTwo = {
       backgroundColor: this.props.skillData.color,
       width: `${99 - this.props.skillData.score}%`,
-      border: "5px solid #111111",
       opacity: this.props.isScrolled && this.state.isVisable ? 1 : 0,
-      transition: "0.7s ease-out",
-      padding: "0 0 0 10px",
-      fontSize: "1.3rem",
-      minHeight: "16vh"
+      zIndex: this.props.isScrolled ? 1 : 0
     };
     return (
       <article className={styles.skillContainer}>
@@ -33,8 +29,13 @@ class Skill extends Component {
           onClick={this.handleClick}
         >
           <p>{this.props.skillData.name}</p>
+          <p className={styles.mobileOnly}>Press to expand</p>
         </div>
-        <div style={colorWidthTwo}>
+        <div
+          style={colorWidthTwo}
+          className={styles.innerRight}
+          onClick={this.handleClick}
+        >
           <p>{this.props.skillData.desc}</p>
         </div>
       </article>

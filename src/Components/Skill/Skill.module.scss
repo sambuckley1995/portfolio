@@ -4,6 +4,13 @@
   padding: 10px 0;
   display: flex;
 }
+.innerRight {
+  border: 5px solid #111111;
+  transition: 0.7s ease-out;
+  padding: 0 0 0 10px;
+  font-size: 1.3rem;
+  min-height: 16vh;
+}
 .inner {
   min-height: 16vh;
   width: 0%;
@@ -15,6 +22,9 @@
   font-weight: 600;
   transition: width 2s ease-out;
   border: 5px solid #111111;
+  .mobileOnly {
+    opacity: 0;
+  }
 
   p {
     padding: 20px 0 0 20px;
@@ -44,8 +54,37 @@
 
 @media only screen and (max-width: 800px) {
   .skillContainer {
+    .inner {
+      border: none;
+    }
     p {
-      font-size: 0.6em;
+      font-size: 0.65em;
+    }
+    .mobileOnly {
+      opacity: 1;
+    }
+    .innerRight {
+      position: absolute;
+      border: none;
+    }
+    .innerRight:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .inner {
+    font-size: 0.9rem;
+    letter-spacing: 6px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .innerRight {
+    p {
+      font-size: 0.45em;
     }
   }
 }
