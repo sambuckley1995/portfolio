@@ -14,7 +14,7 @@ class Tile extends Component {
       this.props.tileData.link !== null ? this.props.tileData.link : "";
     return (
       <article className={styles.tileContainer}>
-        <a href={link}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <img
             src={this.props.tileData.imagePath}
             alt={this.props.tileData.name}
