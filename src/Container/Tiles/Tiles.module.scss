@@ -1,6 +1,9 @@
 .equallyLittleBlanket {
-  color: white;
   max-width: 100vw;
-  height: 800px;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
 }

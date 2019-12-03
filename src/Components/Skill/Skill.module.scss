@@ -1,15 +1,16 @@
 .skillContainer {
-  height: 18%;
+  height: 16vh;
   background: transparent;
   padding: 10px 0;
   display: flex;
 }
 .inner {
-  min-height: 18%;
+  min-height: 16vh;
   width: 0%;
   color: white;
   // background: transparent;
   mix-blend-mode: multiply;
+  font-size: 1.5rem;
   letter-spacing: 12px;
   font-weight: 600;
   transition: width 2s ease-out;
@@ -24,4 +25,11 @@
 .inner:hover {
   cursor: pointer;
   opacity: 0.6;
+}
+@media only screen and (max-width: 1400px) {
+  .skillContainer {
+    p {
+      font-size: 0.9em;
+    }
+  }
 }

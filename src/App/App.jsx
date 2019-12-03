@@ -3,6 +3,8 @@ import styles from "./App.module.scss";
 import Footer from "../Components/Footer";
 import Skills from "../Container/Skills";
 import Tiles from "../Container/Tiles";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class App extends Component {
   state = {
@@ -149,16 +151,25 @@ class App extends Component {
     return (
       <>
         <section className={styles.landing}>
-          <h1>Sam Buckley</h1>
-          <canvas
-            className={styles.canvas}
-            width={window.innerWidth}
-            height={window.innerHeight}
-          ></canvas>
-          <Skills isScrolled={this.state.isScrolled} />
-          <Tiles />
-          <Footer />
+          <h1>
+            I'm Sam. <br /> Feel free to have a little look around my portfolio
+            site.
+          </h1>
+          <a href="#littleBlanket">
+            {" "}
+            <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
+          </a>
         </section>
+        <canvas
+          className={styles.canvas}
+          width={window.innerWidth}
+          height={window.innerHeight}
+        ></canvas>
+
+        <Skills isScrolled={this.state.isScrolled} />
+        <Tiles />
+
+        <Footer />
       </>
     );
   }

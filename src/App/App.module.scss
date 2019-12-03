@@ -1,11 +1,23 @@
 .landing {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   h1 {
-    position: absolute;
     color: white;
-    top: calc(100% / 2.2);
-    left: calc(100% / 2.2);
+  }
+  .icon {
+    color: white;
+    font-size: 40px;
+    transition: 1s;
+  }
+  .icon:hover {
+    transform: scale(2);
+    transition: 1s;
   }
 }
 
@@ -13,6 +25,6 @@
   background-color: #111111;
 }
 
-.canvas:hover {
+.landing:hover {
   cursor: pointer;
 }

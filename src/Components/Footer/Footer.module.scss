@@ -1,9 +1,10 @@
 .links {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #111111;
   margin-block-end: 0;
+  position: sticky;
   .wrapper {
     padding: 1%;
   }

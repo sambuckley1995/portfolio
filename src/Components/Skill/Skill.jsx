@@ -22,7 +22,8 @@ class Skill extends Component {
       opacity: this.props.isScrolled && this.state.isVisable ? 1 : 0,
       transition: "0.7s ease-out",
       padding: "0 0 0 10px",
-      fontSize: "1.1em"
+      fontSize: "1.3rem",
+      minHeight: "18vh"
     };
     return (
       <article className={styles.skillContainer}>
