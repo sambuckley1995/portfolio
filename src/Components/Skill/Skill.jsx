@@ -19,7 +19,7 @@ class Skill extends Component {
       backgroundColor: this.props.skillData.color,
       width: `${99 - this.props.skillData.score}%`,
       opacity: this.props.isScrolled && this.state.isVisable ? 1 : 0,
-      zIndex: this.props.isScrolled ? 1 : 0
+      zIndex: this.props.isScrolled && this.state.isVisable ? 1 : 0
     };
     return (
       <article className={styles.skillContainer}>
