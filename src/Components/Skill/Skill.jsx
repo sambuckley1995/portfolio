@@ -23,7 +23,7 @@ class Skill extends Component {
       transition: "0.7s ease-out",
       padding: "0 0 0 10px",
       fontSize: "1.3rem",
-      minHeight: "18vh"
+      minHeight: "16vh"
     };
     return (
       <article className={styles.skillContainer}>
