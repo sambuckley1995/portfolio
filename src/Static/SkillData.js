@@ -22,7 +22,7 @@ const skillData = [
     color: "blue",
     score: 54,
     desc:
-      "As styling is a core element of any application, I learnt to use CSS from the first week of the _nology course. I have learnt about selectors including classes, ids and pseudo-classes. The introduction of SCSS has been a revelation, never could I have known how useful the ability to nest would've been."
+      "As styling is a core element of any application, I learnt to use CSS from the first week of the _nology course. The introduction of SCSS has been a revelation, never could I have known how useful the ability to nest would've been."
   },
   {
     id: "github",
