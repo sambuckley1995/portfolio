@@ -36,10 +36,22 @@
   cursor: pointer;
   opacity: 0.6;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1550px) {
   .skillContainer {
-    p {
-      font-size: 0.7em;
+    .innerRight {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .skillContainer {
+    .innerRight {
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 }
@@ -50,7 +62,7 @@
       border: none;
     }
     p {
-      font-size: 0.65em;
+      font-size: 0.65rem;
     }
     .mobileOnly {
       display: block;
