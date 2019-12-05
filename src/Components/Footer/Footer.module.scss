@@ -6,15 +6,17 @@
   margin-block-end: 0;
   margin-top: 10vh;
   position: sticky;
+  padding: 0 20px;
   .wrapper {
     padding: 1%;
-  }
-  .icons {
-    font-size: 80px;
-    color: white;
-  }
-  .icons:hover {
-    cursor: pointer;
-    color: rgb(170, 170, 170);
+    .icons {
+      font-size: 80px;
+      width: 80px;
+      color: white;
+    }
+    .icons:hover {
+      cursor: pointer;
+      color: rgb(170, 170, 170);
+    }
   }
 }

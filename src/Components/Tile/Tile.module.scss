@@ -1,9 +1,7 @@
 .tileContainer {
   border: 3px solid white;
-  background: transparent;
-  // padding: 10px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   width: 35vw;
   margin: 1vh;
@@ -25,6 +23,8 @@
   .linkWrapper {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
+    padding: 1vh;
   }
   a:link,
   a:visited,

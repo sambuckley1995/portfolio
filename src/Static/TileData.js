@@ -16,16 +16,6 @@ const tileData = [
       "The big boy, the client project: I worked as part of a team of nine working on this project as part of the _nology course. "
   },
   {
-    id: "todo",
-    name: "Todo List",
-    githublink: "https://github.com/sambuckley1995/todolist",
-    link: "https://todo.borkley.co.uk/login",
-    imagePath: todo,
-    stack: "React, SASS, Firestore, Firebase Authentication",
-    description:
-      "A time limited brief set on week 8 of the _nology course. Firestore was used for the database and gmail authentication is used to allow the user to sign in. Each unique user has a separate collection of 'to-do's to do with as they please. "
-  },
-  {
     id: "sounds",
     name: "Sounds",
     githublink: "https://github.com/sambuckley1995/Sound",
@@ -34,6 +24,16 @@ const tileData = [
     stack: "HTML5 canvas, CSS3, Javascript, Paper.js, Howler.js",
     description:
       "A bit of fun really, I had seen a course mate having difficulty trying to work with sounds in vanilla Javascript. After encountering a library called howler.js, I decided I wanted to try and build something using it. "
+  },
+  {
+    id: "todo",
+    name: "Todo List",
+    githublink: "https://github.com/sambuckley1995/todolist",
+    link: "https://todo.borkley.co.uk/login",
+    imagePath: todo,
+    stack: "React, SASS, Firestore, Firebase Authentication",
+    description:
+      "A time limited brief set on week 8 of the _nology course. Firestore was used for the database and gmail authentication is used to allow the user to sign in. Each unique user has a separate collection of 'to-do's to do with as they please. "
   },
   {
     id: "colorgame",

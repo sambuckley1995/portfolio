@@ -1,6 +1,5 @@
 .skillContainer {
   height: 16vh;
-  background: transparent;
   padding: 10px 0;
   display: flex;
 }
@@ -10,20 +9,21 @@
   padding: 0 0 0 10px;
   font-size: 1.3rem;
   min-height: 16vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .inner {
   min-height: 16vh;
   width: 0%;
   color: white;
-  // background: transparent;
-  mix-blend-mode: multiply;
   font-size: 1.5rem;
-  letter-spacing: 12px;
+  letter-spacing: 10px;
   font-weight: 600;
   transition: width 2s ease-out;
   border: 5px solid #111111;
   .mobileOnly {
-    opacity: 0;
+    display: none;
   }
 
   p {
@@ -53,7 +53,7 @@
       font-size: 0.65em;
     }
     .mobileOnly {
-      opacity: 1;
+      display: block;
     }
     .innerRight {
       position: absolute;
@@ -76,7 +76,7 @@
 @media only screen and (max-width: 550px) {
   .innerRight {
     p {
-      font-size: 0.45em;
+      font-size: 0.43em;
     }
   }
 }
