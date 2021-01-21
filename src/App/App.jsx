@@ -29,7 +29,6 @@ class App extends Component {
     canvas.height = window.innerHeight;
     var c = canvas.getContext("2d");
 
-    // earth color scheme
     var earth = [
       "rgba(0, 38, 28, x)",
       "rgba(4, 76, 41, x)",
@@ -37,8 +36,6 @@ class App extends Component {
       "rgba(69, 191, 85, x)",
       "rgba(150, 237, 137, x)"
     ];
-
-    // fire color scheme
     var fire = [
       "rgba(242, 193, 102, x)",
       "rgba(242, 134, 39, x)",
@@ -46,8 +43,6 @@ class App extends Component {
       "rgba(140, 29, 4, x)",
       "rgba(65, 15, 4, x)"
     ];
-
-    // water color scheme
     var water = [
       "rgba(0, 48, 90, x)",
       "rgba(0, 75, 141, x)",
@@ -56,7 +51,6 @@ class App extends Component {
       "rgba(122, 186, 242, x)"
     ];
 
-    // collection of earth, fire and water
     var colorArray = [earth, fire, water];
 
     // current color accessor
@@ -100,17 +94,6 @@ class App extends Component {
 
     var x = window.innerWidth * getRandom();
     var y = window.innerHeight * getRandom();
-    // mouse position
-    // var mouse = {
-    //   x: window.innerWidth * random,
-    //   y: window.innerHeight * random
-    // };
-
-    // on mousemovement, update coordinates of mouse
-    // window.addEventListener('mousemove', function(e) {
-    // 	mouse.x = e.x;
-    // 	mouse.y = e.y;
-    // });
 
     // change color scheme on click and rotate colorArray
     window.addEventListener("click", function() {
