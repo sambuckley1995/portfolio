@@ -94,8 +94,7 @@ class App extends Component {
     var circles = [];
 
     function getRandom() {
-      let ran = 0;
-      ran = Math.random();
+      let ran = Math.random();
       return ran;
     }
 
@@ -121,10 +120,10 @@ class App extends Component {
     });
 
     const animate = () => {
-      // setTimeout(() => {
-      //   window.requestAnimationFrame(animate);
-      // }, 50);
-      window.requestAnimationFrame(animate);
+      setTimeout(() => {
+        window.requestAnimationFrame(animate);
+      }, 15);
+      // window.requestAnimationFrame(animate);
       c.clearRect(0, 0, window.innerWidth, window.innerHeight);
       x = window.innerWidth * getRandom();
       y = window.innerHeight * getRandom();
@@ -152,8 +151,7 @@ class App extends Component {
       <>
         <section className={styles.landing}>
           <h1>
-            I'm Sam. <br /> Feel free to have a little look around my portfolio
-            site.
+            I am Sam. <br /> A Bristol based web developer
           </h1>
           <p>Click anywhere</p>
           <a href="#littleBlanket">
@@ -168,6 +166,7 @@ class App extends Component {
         ></canvas>
 
         <Skills isScrolled={this.state.isScrolled} />
+        {/* work experience */}
         <Tiles />
 
         <Footer />
